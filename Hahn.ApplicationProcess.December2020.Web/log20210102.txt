@@ -1,0 +1,181 @@
+2021-01-02 00:52:23.192 +03:30 [INF] Now listening on: https://localhost:5001
+2021-01-02 00:52:23.259 +03:30 [INF] Now listening on: http://localhost:5000
+2021-01-02 00:52:23.259 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-02 00:52:23.259 +03:30 [INF] Hosting environment: Development
+2021-01-02 00:52:23.260 +03:30 [INF] Content root path: /media/navid/9bf0167c-d789-4e06-9e23-4023ec551745/Navid's Staff/roaming/Hahn.ApplicationProcess.Application/Hahn.ApplicationProcess.December2020.Web
+2021-01-02 00:52:24.975 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-01-02 00:52:25.249 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 277.7875ms
+2021-01-02 00:52:25.429 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - -
+2021-01-02 00:52:25.494 +03:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-01-02 00:52:25.495 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 0 142933 text/css 65.5131ms
+2021-01-02 00:52:25.728 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-01-02 00:52:25.730 +03:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-01-02 00:52:25.731 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 0 665 image/png 3.4525ms
+2021-01-02 00:52:25.954 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-01-02 00:52:26.171 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 217.0543ms
+2021-01-02 00:54:04.555 +03:30 [INF] Now listening on: https://localhost:5001
+2021-01-02 00:54:04.652 +03:30 [INF] Now listening on: http://localhost:5000
+2021-01-02 00:54:04.652 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-02 00:54:04.652 +03:30 [INF] Hosting environment: Development
+2021-01-02 00:54:04.653 +03:30 [INF] Content root path: /media/navid/9bf0167c-d789-4e06-9e23-4023ec551745/Navid's Staff/roaming/Hahn.ApplicationProcess.Application/Hahn.ApplicationProcess.December2020.Web
+2021-01-02 00:54:05.555 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-01-02 00:54:05.814 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 261.7879ms
+2021-01-02 00:54:06.454 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-01-02 00:54:06.670 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 216.1031ms
+2021-01-02 00:54:18.861 +03:30 [INF] Request starting HTTP/2 POST https://localhost:5001/Applicant application/json 169
+2021-01-02 00:54:18.943 +03:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 00:54:18.996 +03:30 [INF] Route matched with {action = "Create", controller = "Applicant"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Hahn.ApplicationProcess.December2020.Web.Model.CommandDto.CreateApplicantCommandDto) on controller Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController (Hahn.ApplicationProcess.December2020.Web).
+2021-01-02 00:54:19.284 +03:30 [INF] Executed action Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web) in 279.9129ms
+2021-01-02 00:54:19.288 +03:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 00:54:19.291 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.ILogger' while attempting to activate 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-01-02 00:54:19.426 +03:30 [INF] Request finished HTTP/2 POST https://localhost:5001/Applicant application/json 169 - 500 - text/plain 564.9849ms
+2021-01-02 00:55:29.433 +03:30 [INF] Now listening on: https://localhost:5001
+2021-01-02 00:55:29.528 +03:30 [INF] Now listening on: http://localhost:5000
+2021-01-02 00:55:29.529 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-02 00:55:29.529 +03:30 [INF] Hosting environment: Development
+2021-01-02 00:55:29.529 +03:30 [INF] Content root path: /media/navid/9bf0167c-d789-4e06-9e23-4023ec551745/Navid's Staff/roaming/Hahn.ApplicationProcess.Application/Hahn.ApplicationProcess.December2020.Web
+2021-01-02 00:55:30.715 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-01-02 00:55:30.975 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 261.6824ms
+2021-01-02 00:55:31.637 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-01-02 00:55:31.892 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 255.1687ms
+2021-01-02 00:55:42.384 +03:30 [INF] Request starting HTTP/2 POST https://localhost:5001/Applicant application/json 169
+2021-01-02 00:55:42.465 +03:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 00:55:42.520 +03:30 [INF] Route matched with {action = "Create", controller = "Applicant"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Hahn.ApplicationProcess.December2020.Web.Model.CommandDto.CreateApplicantCommandDto) on controller Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController (Hahn.ApplicationProcess.December2020.Web).
+2021-01-02 00:55:42.815 +03:30 [INF] Executed action Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web) in 285.5389ms
+2021-01-02 00:55:42.819 +03:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 00:55:42.824 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-01-02 00:55:42.954 +03:30 [INF] Request finished HTTP/2 POST https://localhost:5001/Applicant application/json 169 - 500 - text/plain 569.6226ms
+2021-01-02 00:58:45.241 +03:30 [INF] Now listening on: https://localhost:5001
+2021-01-02 00:58:45.310 +03:30 [INF] Now listening on: http://localhost:5000
+2021-01-02 00:58:45.311 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-02 00:58:45.311 +03:30 [INF] Hosting environment: Development
+2021-01-02 00:58:45.311 +03:30 [INF] Content root path: /media/navid/9bf0167c-d789-4e06-9e23-4023ec551745/Navid's Staff/roaming/Hahn.ApplicationProcess.Application/Hahn.ApplicationProcess.December2020.Web
+2021-01-02 00:58:46.517 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-01-02 00:58:46.790 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 275.8570ms
+2021-01-02 00:58:47.596 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-01-02 00:58:47.806 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 209.3099ms
+2021-01-02 00:58:53.906 +03:30 [INF] Request starting HTTP/2 POST https://localhost:5001/Applicant application/json 169
+2021-01-02 00:58:53.994 +03:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 00:58:54.047 +03:30 [INF] Route matched with {action = "Create", controller = "Applicant"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Hahn.ApplicationProcess.December2020.Web.Model.CommandDto.CreateApplicantCommandDto) on controller Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController (Hahn.ApplicationProcess.December2020.Web).
+2021-01-02 00:58:54.418 +03:30 [INF] kiri magham
+2021-01-02 00:58:54.533 +03:30 [INF] Start processing HTTP request GET "https://restcountries.eu/rest/v2/name/Iran (Islamic republic of)?field=name"
+2021-01-02 00:58:54.537 +03:30 [INF] Sending HTTP request GET "https://restcountries.eu/rest/v2/name/Iran (Islamic republic of)?field=name"
+2021-01-02 00:58:55.443 +03:30 [INF] Received HTTP response headers after 901.5395ms - 200
+2021-01-02 00:58:55.446 +03:30 [INF] End processing HTTP request after 921.3ms - 200
+2021-01-02 00:58:55.992 +03:30 [INF] Entity Framework Core 5.0.1 initialized 'ApplicantDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=applicantDb 
+2021-01-02 00:58:56.204 +03:30 [INF] Saved 1 entities to in-memory store.
+2021-01-02 00:58:56.219 +03:30 [INF] Executing CreatedResult, writing value of type 'Hahn.ApplicationProcess.December2020.Web.Model.ResultDto.ResultDto`1[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-01-02 00:58:56.236 +03:30 [INF] Executed action Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web) in 2180.3784ms
+2021-01-02 00:58:56.237 +03:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 00:58:56.242 +03:30 [INF] Request finished HTTP/2 POST https://localhost:5001/Applicant application/json 169 - 201 - application/json;+charset=utf-8 2337.2676ms
+2021-01-02 09:51:54.985 +03:30 [INF] Now listening on: https://localhost:5001
+2021-01-02 09:51:55.044 +03:30 [INF] Now listening on: http://localhost:5000
+2021-01-02 09:51:55.045 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-02 09:51:55.045 +03:30 [INF] Hosting environment: Development
+2021-01-02 09:51:55.045 +03:30 [INF] Content root path: /media/navid/9bf0167c-d789-4e06-9e23-4023ec551745/Navid's Staff/roaming/Hahn.ApplicationProcess.Application/Hahn.ApplicationProcess.December2020.Web
+2021-01-02 09:51:56.755 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2021-01-02 09:51:57.185 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 433.7182ms
+2021-01-02 09:51:57.478 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - -
+2021-01-02 09:51:57.560 +03:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-01-02 09:51:57.561 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 0 142933 text/css 83.1537ms
+2021-01-02 09:51:57.835 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - -
+2021-01-02 09:51:57.840 +03:30 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2021-01-02 09:51:57.841 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-16x16.png - - - 200 665 image/png 5.2296ms
+2021-01-02 09:51:58.178 +03:30 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2021-01-02 09:51:58.564 +03:30 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 385.7793ms
+2021-01-02 09:53:25.973 +03:30 [INF] Request starting HTTP/2 POST https://localhost:5001/Applicant application/json 167
+2021-01-02 09:53:26.063 +03:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 09:53:26.119 +03:30 [INF] Route matched with {action = "Create", controller = "Applicant"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Hahn.ApplicationProcess.December2020.Web.Model.CommandDto.CreateApplicantCommandDto) on controller Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController (Hahn.ApplicationProcess.December2020.Web).
+2021-01-02 09:53:26.572 +03:30 [INF] Start processing HTTP request GET "https://restcountries.eu/rest/v2/name/Ir (Islamic republic of)?field=name"
+2021-01-02 09:53:26.576 +03:30 [INF] Sending HTTP request GET "https://restcountries.eu/rest/v2/name/Ir (Islamic republic of)?field=name"
+2021-01-02 09:53:27.372 +03:30 [INF] Received HTTP response headers after 791.549ms - 404
+2021-01-02 09:53:27.374 +03:30 [INF] End processing HTTP request after 806.1806ms - 404
+2021-01-02 09:53:34.936 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'Hahn.ApplicationProcess.December2020.Web.Model.ResultDto.ResultDto`1[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-01-02 09:53:34.963 +03:30 [INF] Executed action Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web) in 8831.4086ms
+2021-01-02 09:53:34.963 +03:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 09:53:34.968 +03:30 [INF] Request finished HTTP/2 POST https://localhost:5001/Applicant application/json 167 - 400 - application/json;+charset=utf-8 8999.9822ms
+2021-01-02 09:53:50.030 +03:30 [INF] Request starting HTTP/2 POST https://localhost:5001/Applicant application/json 164
+2021-01-02 09:53:50.031 +03:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 09:53:50.032 +03:30 [INF] Route matched with {action = "Create", controller = "Applicant"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Hahn.ApplicationProcess.December2020.Web.Model.CommandDto.CreateApplicantCommandDto) on controller Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController (Hahn.ApplicationProcess.December2020.Web).
+2021-01-02 09:53:50.037 +03:30 [INF] Start processing HTTP request GET "https://restcountries.eu/rest/v2/name/Ir (Islamic republic of)?field=name"
+2021-01-02 09:53:50.037 +03:30 [INF] Sending HTTP request GET "https://restcountries.eu/rest/v2/name/Ir (Islamic republic of)?field=name"
+2021-01-02 09:53:50.455 +03:30 [INF] Received HTTP response headers after 418.1922ms - 404
+2021-01-02 09:53:50.456 +03:30 [INF] End processing HTTP request after 418.9601ms - 404
+2021-01-02 09:53:50.661 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'Hahn.ApplicationProcess.December2020.Web.Model.ResultDto.ResultDto`1[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-01-02 09:53:50.661 +03:30 [INF] Executed action Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web) in 629.4646ms
+2021-01-02 09:53:50.662 +03:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 09:53:50.662 +03:30 [INF] Request finished HTTP/2 POST https://localhost:5001/Applicant application/json 164 - 400 - application/json;+charset=utf-8 637.3230ms
+2021-01-02 09:54:00.076 +03:30 [INF] Request starting HTTP/2 POST https://localhost:5001/Applicant application/json 163
+2021-01-02 09:54:00.077 +03:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 09:54:00.077 +03:30 [INF] Route matched with {action = "Create", controller = "Applicant"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Hahn.ApplicationProcess.December2020.Web.Model.CommandDto.CreateApplicantCommandDto) on controller Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController (Hahn.ApplicationProcess.December2020.Web).
+2021-01-02 09:54:00.082 +03:30 [INF] Start processing HTTP request GET "https://restcountries.eu/rest/v2/name/Ir (Islamic republic of)?field=name"
+2021-01-02 09:54:00.082 +03:30 [INF] Sending HTTP request GET "https://restcountries.eu/rest/v2/name/Ir (Islamic republic of)?field=name"
+2021-01-02 09:54:00.390 +03:30 [INF] Received HTTP response headers after 307.366ms - 404
+2021-01-02 09:54:00.390 +03:30 [INF] End processing HTTP request after 308.2071ms - 404
+2021-01-02 09:54:00.622 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'Hahn.ApplicationProcess.December2020.Web.Model.ResultDto.ResultDto`1[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-01-02 09:54:00.623 +03:30 [INF] Executed action Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web) in 545.4138ms
+2021-01-02 09:54:00.623 +03:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 09:54:00.623 +03:30 [INF] Request finished HTTP/2 POST https://localhost:5001/Applicant application/json 163 - 400 - application/json;+charset=utf-8 547.6669ms
+2021-01-02 09:54:33.250 +03:30 [INF] Request starting HTTP/2 POST https://localhost:5001/Applicant application/json 159
+2021-01-02 09:54:33.251 +03:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 09:54:33.251 +03:30 [INF] Route matched with {action = "Create", controller = "Applicant"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Hahn.ApplicationProcess.December2020.Web.Model.CommandDto.CreateApplicantCommandDto) on controller Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController (Hahn.ApplicationProcess.December2020.Web).
+2021-01-02 09:54:33.254 +03:30 [INF] Start processing HTTP request GET "https://restcountries.eu/rest/v2/name/Ir (Islamic republic of)?field=name"
+2021-01-02 09:54:33.254 +03:30 [INF] Sending HTTP request GET "https://restcountries.eu/rest/v2/name/Ir (Islamic republic of)?field=name"
+2021-01-02 09:54:33.567 +03:30 [INF] Received HTTP response headers after 312.3861ms - 404
+2021-01-02 09:54:33.567 +03:30 [INF] End processing HTTP request after 313.3153ms - 404
+2021-01-02 09:54:33.782 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'Hahn.ApplicationProcess.December2020.Web.Model.ResultDto.ResultDto`1[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-01-02 09:54:33.782 +03:30 [INF] Executed action Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web) in 531.0227ms
+2021-01-02 09:54:33.782 +03:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 09:54:33.783 +03:30 [INF] Request finished HTTP/2 POST https://localhost:5001/Applicant application/json 159 - 400 - application/json;+charset=utf-8 532.7055ms
+2021-01-02 09:54:44.717 +03:30 [INF] Request starting HTTP/2 POST https://localhost:5001/Applicant application/json 158
+2021-01-02 09:54:44.718 +03:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 09:54:44.718 +03:30 [INF] Route matched with {action = "Create", controller = "Applicant"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Hahn.ApplicationProcess.December2020.Web.Model.CommandDto.CreateApplicantCommandDto) on controller Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController (Hahn.ApplicationProcess.December2020.Web).
+2021-01-02 09:54:44.721 +03:30 [INF] Start processing HTTP request GET "https://restcountries.eu/rest/v2/name/Ir (Islamic republic of)?field=name"
+2021-01-02 09:54:44.721 +03:30 [INF] Sending HTTP request GET "https://restcountries.eu/rest/v2/name/Ir (Islamic republic of)?field=name"
+2021-01-02 09:54:45.035 +03:30 [INF] Received HTTP response headers after 314.5451ms - 404
+2021-01-02 09:54:45.036 +03:30 [INF] End processing HTTP request after 315.3143ms - 404
+2021-01-02 09:54:45.238 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'Hahn.ApplicationProcess.December2020.Web.Model.ResultDto.ResultDto`1[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-01-02 09:54:45.239 +03:30 [INF] Executed action Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web) in 520.4033ms
+2021-01-02 09:54:45.239 +03:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 09:54:45.239 +03:30 [INF] Request finished HTTP/2 POST https://localhost:5001/Applicant application/json 158 - 400 - application/json;+charset=utf-8 522.8428ms
+2021-01-02 09:54:58.531 +03:30 [INF] Request starting HTTP/2 POST https://localhost:5001/Applicant application/json 157
+2021-01-02 09:54:58.531 +03:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 09:54:58.532 +03:30 [INF] Route matched with {action = "Create", controller = "Applicant"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Hahn.ApplicationProcess.December2020.Web.Model.CommandDto.CreateApplicantCommandDto) on controller Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController (Hahn.ApplicationProcess.December2020.Web).
+2021-01-02 09:54:58.535 +03:30 [INF] Start processing HTTP request GET "https://restcountries.eu/rest/v2/name/Ir (Islamic republic of)?field=name"
+2021-01-02 09:54:58.535 +03:30 [INF] Sending HTTP request GET "https://restcountries.eu/rest/v2/name/Ir (Islamic republic of)?field=name"
+2021-01-02 09:54:58.848 +03:30 [INF] Received HTTP response headers after 312.8347ms - 404
+2021-01-02 09:54:58.848 +03:30 [INF] End processing HTTP request after 313.7538ms - 404
+2021-01-02 09:54:59.066 +03:30 [INF] Executing BadRequestObjectResult, writing value of type 'Hahn.ApplicationProcess.December2020.Web.Model.ResultDto.ResultDto`1[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-01-02 09:54:59.067 +03:30 [INF] Executed action Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web) in 534.7626ms
+2021-01-02 09:54:59.067 +03:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.December2020.Web.Controllers.ApplicantController.Create (Hahn.ApplicationProcess.December2020.Web)'
+2021-01-02 09:54:59.067 +03:30 [INF] Request finished HTTP/2 POST https://localhost:5001/Applicant application/json 157 - 400 - application/json;+charset=utf-8 536.0463ms
