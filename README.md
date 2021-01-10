@@ -12,7 +12,7 @@ This solution contains five different projects, as listed bellow:
 * .net(core) 5.0  
 
 # Run instruction
-1. set your current directory as root of **Hahn.ApplicationProcess.December2020. Web** project and run this command to run the project.
+1. set your current directory as root of **Hahn.ApplicationProcess.December2020. Web** project and execute this command.
 ```sh
 $ donet run 
 ```
